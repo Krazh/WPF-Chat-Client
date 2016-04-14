@@ -1,0 +1,14 @@
+C:\Users\krazh\Documents\Visual Studio 2015\Projects\SecureTcpWpfClient\SecureTcpWpfClient\bin\Debug\SecureTcpWpfClient.exe.config
+C:\Users\krazh\Documents\Visual Studio 2015\Projects\SecureTcpWpfClient\SecureTcpWpfClient\bin\Debug\SecureTcpWpfClient.exe
+C:\Users\krazh\Documents\Visual Studio 2015\Projects\SecureTcpWpfClient\SecureTcpWpfClient\bin\Debug\SecureTcpWpfClient.pdb
+C:\Users\krazh\Documents\Visual Studio 2015\Projects\SecureTcpWpfClient\SecureTcpWpfClient\obj\Debug\View\MainWindow.g.cs
+C:\Users\krazh\Documents\Visual Studio 2015\Projects\SecureTcpWpfClient\SecureTcpWpfClient\obj\Debug\App.g.cs
+C:\Users\krazh\Documents\Visual Studio 2015\Projects\SecureTcpWpfClient\SecureTcpWpfClient\obj\Debug\SecureTcpWpfClient_MarkupCompile.cache
+C:\Users\krazh\Documents\Visual Studio 2015\Projects\SecureTcpWpfClient\SecureTcpWpfClient\obj\Debug\SecureTcpWpfClient_MarkupCompile.lref
+C:\Users\krazh\Documents\Visual Studio 2015\Projects\SecureTcpWpfClient\SecureTcpWpfClient\obj\Debug\View\MainWindow.baml
+C:\Users\krazh\Documents\Visual Studio 2015\Projects\SecureTcpWpfClient\SecureTcpWpfClient\obj\Debug\SecureTcpWpfClient.g.resources
+C:\Users\krazh\Documents\Visual Studio 2015\Projects\SecureTcpWpfClient\SecureTcpWpfClient\obj\Debug\SecureTcpWpfClient.Properties.Resources.resources
+C:\Users\krazh\Documents\Visual Studio 2015\Projects\SecureTcpWpfClient\SecureTcpWpfClient\obj\Debug\SecureTcpWpfClient.csproj.GenerateResource.Cache
+C:\Users\krazh\Documents\Visual Studio 2015\Projects\SecureTcpWpfClient\SecureTcpWpfClient\obj\Debug\SecureTcpWpfClient.exe
+C:\Users\krazh\Documents\Visual Studio 2015\Projects\SecureTcpWpfClient\SecureTcpWpfClient\obj\Debug\SecureTcpWpfClient.pdb
+C:\Users\krazh\Documents\Visual Studio 2015\Projects\SecureTcpWpfClient\SecureTcpWpfClient\obj\Debug\SecureTcpWpfClient.csprojResolveAssemblyReference.cache

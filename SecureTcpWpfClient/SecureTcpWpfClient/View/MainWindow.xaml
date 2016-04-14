@@ -1,0 +1,74 @@
+﻿<Window x:Class="SecureTcpWpfClient.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModel="clr-namespace:SecureTcpWpfClient.ViewModel"
+        xmlns:local="clr-namespace:SecureTcpWpfClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="768" Width="1024">
+    <Window.Resources>
+        
+    </Window.Resources>
+    <Grid x:Name="ThisGrid">
+        <Grid.Resources>
+            <DataTemplate x:Key="MessageTemplate">
+                <TextBlock FontSize="14" Text="{Binding Content}"/>
+            </DataTemplate>
+            <DataTemplate x:Key="UserTemplate">
+                <TextBlock FontSize="14" Text="{Binding Username}"/>
+            </DataTemplate>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Menu Grid.ColumnSpan="3">
+            <MenuItem x:Name="Files" Header="_Files">
+                <MenuItem Header="_New Connection" Command="{Binding ConnectCommand}"/>
+                <MenuItem Header="_Exit"/>
+            </MenuItem>
+        </Menu>
+        
+        <DockPanel Grid.Row="1" HorizontalAlignment="Left">
+            <Button Height="35" Width="75" Margin="5,0" Content="Connect" Command="{Binding ConnectCommand}" Click="OnClick"/>
+            <Button Height="35" Width="75" Margin="5,0" Content="Disconnect" Command="{Binding DisConnectFromServer}" Click="OnClick"/>
+        </DockPanel>
+
+        
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="200"/>
+            </Grid.ColumnDefinitions>
+            <ListView x:Name="MessageListView" Grid.Column="1" Grid.Row="0" ItemsSource="{Binding MessageCollection}" ItemTemplate="{StaticResource MessageTemplate}">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="{x:Type ListViewItem}">
+                        <Setter Property="Focusable" Value="false"/>
+                    </Style>
+                </ListView.ItemContainerStyle>
+            </ListView>
+            <ListView Grid.Column="2" Grid.Row="0" ItemsSource="{Binding Users}" ItemTemplate="{StaticResource UserTemplate}">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="{x:Type ListViewItem}">
+                        <Setter Property="Focusable" Value="false"/>
+                    </Style>
+                </ListView.ItemContainerStyle>
+            </ListView>
+            <TextBox Grid.Column="1" Grid.Row="1" x:Name="messageBox" Text="{Binding OutgoingMessage, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" FontSize="18" VerticalAlignment="Center">
+                <TextBox.InputBindings>
+                    <KeyBinding Gesture="Enter"
+                            Command="{Binding SendCommand}"/>
+                </TextBox.InputBindings>
+            </TextBox>
+        </Grid>
+        
+        
+    </Grid>
+</Window>
